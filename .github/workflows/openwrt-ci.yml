@@ -54,8 +54,8 @@ jobs:
           # ln -s /mnt/openwrt/staging_dir ./staging_dir
 
           df -h
-     - name: 同步最新的源码
-        run: |
+      - name: 同步最新的源码
+        run: 
           git remote add openwrt https://github.com/coolsnowwolf/lede.git
           git pull openwrt master
           git remote -v
